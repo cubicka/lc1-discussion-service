@@ -8,7 +8,12 @@ var async = require('async');
 var config = require('config');
 
 var datasource = require('./../../datasource');
+
+if(process.env.WERCKER_POSTGRESQL_URL) {
+  config.app.pgURL = process.env.WERCKER_POSTGRESQL_URL;
+}
 datasource.init(config);
+
 var db = datasource.getDataSource();
 var sequelize = db.sequelize;
 // turn of sequelize logging.
