@@ -87,7 +87,6 @@ module.exports = function(grunt) {
       test: {
         NODE_ENV: 'test',
         A127_APPROOT: __dirname,
-        DATABASE_URL: process.env.WERCKER_POSTGRESQL_URL
       },
       local: {
         NODE_ENV: 'local'
