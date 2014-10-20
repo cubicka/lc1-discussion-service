@@ -15,4 +15,4 @@ build:
 deploy:
   steps:
     - heroku-deploy:
-        run: heroku pg:psql --app wercker-one-test HEROKU_POSTGRESQL_JADE
+        run: grunt dbmigrate
