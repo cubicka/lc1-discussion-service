@@ -1,5 +1,5 @@
 app:
-  pgURL: 'postgres://postgres:qwerty@localhost:5432/travis_ci_test'
+  pgURL: 'postgres://nmtnefejrxmeza:SSFkJbDstRCE2d1x4sMmUuvXiz@ec2-174-129-21-42.compute-1.amazonaws.com:5432/d585v5dia424sc'
   pg:
     database:
     username:
