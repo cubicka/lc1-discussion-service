@@ -17,7 +17,6 @@ module.exports = function(grunt) {
 
   var envConfig = require('config');
 
-
   if(process.env.WERCKER_POSTGRESQL_URL) {
     databaseUrl = process.env.WERCKER_POSTGRESQL_URL;
   } else if (envConfig.has('app.pgURL')) {
