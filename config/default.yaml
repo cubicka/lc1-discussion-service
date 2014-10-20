@@ -1,12 +1,11 @@
 app:
-  pgURL: WERCKER_POSTGRESQL_URL
   pg:
-    database:
-    username:
-    password:
-    host:
+    database: WERCKER_POSTGRESQL_DATABASE
+    username: WERCKER_POSTGRESQL_USERNAME
+    password: WERCKER_POSTGRESQL_PASSWORD
+    host: WERCKER_POSTGRESQL_HOST
     dialect:
-    port:
+    port: WERCKER_POSTGRESQL_PORT
   port: 10010
   query:
     pageSize: 20
