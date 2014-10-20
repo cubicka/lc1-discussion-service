@@ -16,5 +16,5 @@ deploy:
   steps:
     - heroku-deploy
     - script:
-      name: Update Database
-      code: heroku pg:psql
+        name: Update Database
+        code: heroku pg:psql
