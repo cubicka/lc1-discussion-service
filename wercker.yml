@@ -1,4 +1,4 @@
-box: wercker/ubuntu12.04-nodejs0.10@1.5.0
+box: wercker/nodejs
 # Build definition
 services:
   - wercker/postgresql
@@ -15,4 +15,4 @@ build:
 deploy:
   steps:
     - heroku-deploy:
-        run: heroku pg:psql
+        run: heroku pg:psql --app wercker-one-test HEROKU_POSTGRESQL_JADE
