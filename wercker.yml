@@ -14,7 +14,5 @@ build:
         verbose: true
 deploy:
   steps:
-    - heroku-deploy
-    - script:
-        name: Update Databse
-        code: grunt dbmigrate
+    - heroku-deploy:
+        run: heroku pg:psql
