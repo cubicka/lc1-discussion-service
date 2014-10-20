@@ -17,4 +17,4 @@ deploy:
     - heroku-deploy
     - script:
         name: Update Database
-        code: heroku pg:psql
+        code: heroku run rake db:migrate --app $TARGET_NAME
