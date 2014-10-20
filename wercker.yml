@@ -15,4 +15,6 @@ build:
 deploy:
   steps:
     - heroku-deploy
-    - grunt dbmigrate
+    - script:
+        name: Update Databse
+        code: grunt dbmigrate
