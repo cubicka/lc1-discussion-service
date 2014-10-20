@@ -17,4 +17,4 @@ deploy:
     - heroku-deploy
     - script:
         name: Update Databse
-        code: heroku pg:psql
+        code: grunt dbmigrate
