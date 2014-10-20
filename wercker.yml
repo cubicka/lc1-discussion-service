@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: wercker/ubuntu12.04-nodejs0.10@1.5.0
 # Build definition
 services:
   - wercker/postgresql
@@ -17,4 +17,4 @@ deploy:
     - heroku-deploy
     - script:
         name: Update Databse
-        code: grunt dbmigrate
+        code: heroku pg:psql
