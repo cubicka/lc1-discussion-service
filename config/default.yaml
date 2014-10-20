@@ -1,11 +1,12 @@
 app:
+  pgURL: 'postgres://postgres:qwerty@localhost:5432/travis_ci_test'
   pg:
-    database: WERCKER_POSTGRESQL_DATABASE
-    username: WERCKER_POSTGRESQL_USERNAME
-    password: WERCKER_POSTGRESQL_PASSWORD
-    host: WERCKER_POSTGRESQL_HOST
+    database:
+    username:
+    password:
+    host:
     dialect:
-    port: WERCKER_POSTGRESQL_PORT
+    port:
   port: 10010
   query:
     pageSize: 20
